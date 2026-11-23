@@ -65,10 +65,12 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px so
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .btn.play{
+  border:0;
   border-radius:0;
-  padding-right:2.2rem;
+  padding:calc(.8rem + 2px) calc(2.2rem + 2px) calc(.8rem + 2px) calc(1.4rem + 2px);
   clip-path:polygon(0 0, calc(100% - 1.1rem) 0, 100% 50%, calc(100% - 1.1rem) 100%, 0 100%);
 }
+.btn.play:hover{background:var(--ink);color:var(--paper)}
 .btn.bubble{
   border-radius:1.2rem 1.2rem 1.2rem .15rem;
 }
